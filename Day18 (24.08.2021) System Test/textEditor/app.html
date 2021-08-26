@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: black;
+        padding: 2px;
+    }
+
+    .grid-item {
+        background-color: white;
+        border: 1px solid black;
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    
+    <div class="container">
+        <div class="grid-item" onclick="js_color1()">red</div>
+        <div class="grid-item" onclick="js_color2()">green</div>
+        <div class="grid-item" onclick="js_color3()">blue</div>
+        <div class="grid-item" onclick="js_font1()">20px</div>
+        <div class="grid-item" onclick="js_font2()">30px</div>
+        <div class="grid-item" onclick="js_font3()">40px</div>
+        <div class="grid-item" onclick="js_style1()">sans-serif</div>
+        <div class="grid-item" onclick="js_style2()">cursive</div>
+        <div class="grid-item" onclick="js_style3()">monospace</div>
+    </div>
+
+    <p id="text">Revenge is truly useless
+        All the problems and challenges of the past are mere lessons
+        to be a better person today. No point getting stuck in the past.
+        People may have wronged you.
+        Just forgive them, even if they do not ask for it.
+    
+        Why should we?
+        Because grudges, hatred and anger is like fire sitting inside
+        It burns our inner peace of mind, our inner soul life
+        and destroys our own happiness. The subject of our hatred
+        of our grudges, of our anger may be barely aware of our negative feelings.
+    </p>
+</body>
+<script>
+    function js_color1() {
+        text.style.color = "red";
+    }
+    function js_color2() {
+        text.style.color = "green";
+    }
+    function js_color3() {
+        text.style.color = "blue";
+    }
+
+    function js_font1() {
+        text.style.fontSize = "20px";
+    }
+    function js_font2() {
+        text.style.fontSize = "30px";
+    }
+    function js_font3() {
+        text.style.fontSize = "40px";
+    }
+    function js_style1() {
+        text.style.fontFamily = "sans-serif";
+    }
+    function js_style2() {
+        text.style.fontFamily  = "cursive";
+    }
+    function js_style3() {
+        text.style.fontFamily  = "monospace";
+    }
+</script>
+
+</html>
