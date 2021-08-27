@@ -76,6 +76,11 @@ document.getElementById("btn2").addEventListener("click",function(){
         <div class="card-body">
             <h4 class="card-title">${data2.name}</h4>
             <p class="card-text">${data2.email}</p>
+            <p class="card-text">${data2.address}</p>
+            <p class="card-text">${data2.username}</p>
+            <p class="card-text">${data2.phone}</p>
+            <p class="card-text">${data2.company}</p>
+            <p class="card-text">${data2.website}</p>
         </div>
         <div class="card-body card-p">
             <div class="row">
