@@ -67,5 +67,33 @@ document.querySelector(".posts").innerHTML=temp;
 document.getElementById("btn2").addEventListener("click",function(){
   httpget("https://jsonplaceholder.typicode.com/users/",(r2)=>{
     console.log(r2)
+
+    var temp1=``
+    r2.forEach((data2)=>{
+
+        temp1+=`<div class="col-4"><div class="card shadow">
+        <img src="" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h4 class="card-title">${data2.name}</h4>
+            <p class="card-text">${data2.email}</p>
+        </div>
+        <div class="card-body card-p">
+            <div class="row">
+                <div class="col col-xs-4 ">
+                    <i class="far fa-comments"></i> 456
+                </div>
+                <div class="col col-xs-4 ">
+                    <i class="far fa-heart"></i> 2.4k
+                </div>
+                <div class="col col-xs-4">
+                    <i class="fas fa-share"></i> 99
+                </div>
+            </div>
+        </div>
+    </div></div>`
+    })
+
+document.querySelector(".posts2").innerHTML=temp1;
+
 })
 })
