@@ -1,0 +1,19 @@
+body {
+    box-sizing: border-box;
+}
+
+div {
+    width: 300px;
+    height: 50px;
+    font-size: 40px;
+    border: 10px solid gray;
+    padding: 20px;
+    margin: 20px;
+}
+
+.clock {
+    width: 100%;
+    margin: auto;
+    background-color: grey;
+    font-size: larger;
+}

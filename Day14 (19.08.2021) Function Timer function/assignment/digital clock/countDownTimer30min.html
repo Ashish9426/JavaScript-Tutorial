@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<article class="clock" id="model3">
+    <h3></h3>
+  
+    <div class="count">
+      <div id="timer"></div>
+    </div>
+  </article>
+  <style>
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font: normal bold 16px/normal tahoma;
+}
+
+article {
+    width: 300px;
+    text-align: center;
+    background-color: orange;
+    border-radius: 10px;
+    margin: 50px auto 20px;
+    padding: 5px;
+    overflow: hidden;
+    box-shadow: 3px 3px 10px pink;
+}
+
+article h3 {
+    padding: 10px;
+    color: purple;
+}
+article .count {
+    padding: 5px;
+}
+article #timer{
+    padding: 5px;
+    color: blue;
+    background-color: aliceblue;
+    border-radius: 2px;
+}
+  </style>
+<body>
+    
+</body>
+<script> 
+var h3 = document.getElementsByTagName("h3");
+    h3[0].innerHTML = "Countdown Timer for 30 minutes";
+    
+    var sec         = 1800,
+        countDiv    = document.getElementById("timer"),
+        secpass,
+        countDown   = setInterval(function () {
+           
+            
+            secpass();
+        }, 1000);
+    
+    function secpass() {
+     
+        
+        var min     = Math.floor(sec / 60),
+            remSec  = sec % 60;
+        
+        if (remSec < 10) {
+            
+            remSec = '0' + remSec;
+        
+        }
+        if (min < 10) {
+            
+            min = '0' + min;
+        
+        }
+        countDiv.innerHTML = min + ":" + remSec;
+        
+        if (sec > 0) {
+            
+            sec = sec - 1;
+            
+        } else {
+            
+            clearInterval(countDown);
+            
+            countDiv.innerHTML = 'countdown complete';
+            
+        }
+    }
+</script>    
+</html>
