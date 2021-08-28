@@ -1,13 +1,16 @@
 
-document.getElementById("frm").addEventListener("submit",function(){
-event.preventDefault()
- 
-var data=serialize(this)
-console.log(data)
+pets = []
+function dataForm(){
+    event.preventDefault()
+    
+    var data=serialize(this)
+    console.log(data)
+    pets.push(data)
 
-BindItem(data)
-})
+    BindItem(pets)
+}
 
+// store data into object from FORM
 function serialize(frm){
     var pets={}
     var obj=new FormData(frm)
@@ -52,3 +55,5 @@ function BindItem(arr){
 document.querySelector(".post").innerHTML=temp;
 }
     
+
+document.getElementById("frm").addEventListener("submit",dataForm)
