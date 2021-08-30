@@ -20,6 +20,10 @@ function AddBook(){
     var index=_("index").value;
     var id=books.length+1;
    // console.log(index)
+
+
+   // Here we use 'if' condition to operate two function by submit button
+    // for this in html we create a empty div to apply button operation 
     if(index=="")
     {
     var book=new Books(id,title,price,author);
