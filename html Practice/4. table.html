@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Tables Creation</h2>
+    <table>
+        <tr>
+            <th>S.N.</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Mobile</th>
+        </tr>
+
+        <tr>
+            <td>1.</td>
+            <td>Ashish</td>
+            <td>25</td>
+            <td>ashishm26s4@gmail.com</td>
+            <td>Noida, Uttar Praesh</td>
+            <td>9336355716</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>Mohan</td>
+            <td>29</td>
+            <td>Mohan@gmail.com</td>
+            <td>Prayagraj, Uttar Praesh</td>
+            <td>9458231304</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>row 1 col 1</td>
+            <td>row 1 col 2</td>
+            <td>row 1 col 3</td>
+        </tr>
+        <tr>
+            <td colspan="3">This second row spans all three columns</td>
+        </tr>
+        <tr>
+            <td rowspan="2">This cell spans two rows</td>
+            <td>row 3 col 2</td>
+            <td>row 3 col 3</td>
+        </tr>
+        <tr>
+            <td>row 4 col 2</td>
+            <td>row 4 col 3</td>
+        </tr>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <td></td>
+                <th>Column Heading 1</th>
+                <th>Column Heading 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Row Heading 1</th>
+                    <td>Ashish</td>
+                    <td>Mishra</td>
+            </tr>
+            <tr>
+                <th>Row Heading 2</th>
+                <td>Amit</td>
+                <td>Tripathi</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <td></td>
+                <th scope="col">Column Heading 1</th>
+                <th scope="col">Column Heading 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Row Heading 1</th>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">Row Heading 1</th>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+</body>
+</html>

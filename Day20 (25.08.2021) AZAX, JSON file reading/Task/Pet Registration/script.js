@@ -30,11 +30,12 @@ function BindItem(arr){
         <img src="" class="card-img-top" alt="...">
         <div class="card-body">
             <h4 class="card-title">${e.name}</h4>
-            <p class="card-text">${e.address}</p>
+            <p class="card-text">${e.weight}</p>
+            <p class="card-text">${e.age}</p>
             <p class="card-text">${e.gender}</p>
             <p class="card-text">${e.like}</p>
-            <p class="card-text">${e.weight}</p>
             <p class="card-text">${e.type}</p>
+            <p class="card-text">${e.address}</p>
         </div>
         <div class="card-body card-p">
             <div class="row">

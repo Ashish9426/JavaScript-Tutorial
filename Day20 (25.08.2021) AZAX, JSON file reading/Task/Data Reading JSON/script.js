@@ -1,4 +1,4 @@
-data = []
+var data = []
 // console.log(data)
 
 function loadpets(){
@@ -12,7 +12,8 @@ function loadpets(){
         {
         var result= JSON.parse(this.response)
         console.log(result)
-        data.push(result)
+        data = result.pets
+        data.push(data)
         }
         
         // console.log(pets)
@@ -30,10 +31,15 @@ loadpets()
 //             if(res.ok){
 //                 res.json().then(function(result){
 //                     console.log(result)
+//                     var Pet = result.pets
+//                     data.push(Pet)
+//                     BindItem(data)
 //                 })
+                
 //             }
        
 //     })
+    
 // }
 // loadpets()
 
@@ -49,19 +55,7 @@ function BindItem(arr){
             <p class="card-text">${e.age}</p>
             <p class="card-text">${e.weight}</p>
         </div>
-        <div class="card-body card-p">
-            <div class="row">
-                <div class="col col-xs-4 ">
-                    <i class="far fa-comments"></i> 456
-                </div>
-                <div class="col col-xs-4 ">
-                    <i class="far fa-heart"></i> 2.4k
-                </div>
-                <div class="col col-xs-4">
-                    <i class="fas fa-share"></i> 99
-                </div>
-            </div>
-        </div>
+        
     </div></div>`
     })
 

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .highlight { 
+            color: green;
+        } */
+
+        /* div.highlight { 
+            color: red; 
+        } */
+
+        .main .highlight { 
+            color: red; 
+        } /* Descendant combinator */
+
+        .footer > .highlight { 
+            color: blue; 
+        } /* Child combinator */
+
+        .special.left.menu { 
+            color: pink; 
+        }
+    </style>
+</head>
+<body>
+    <div class="highlight">Lorem ipsum dolor sit, amet consectetur 
+        adipisicing elit. Excepturi ducimus, placeat maxime molestias
+        commodi at nesciunt sunt ullam sit, velit incidunt, esse culpa 
+        minus quo impedit laborum consectetur libero recusandae.
+    </div>
+    <span class="highlight">Lorem ipsum dolor sit amet, consectetur 
+        adipisicing elit. Accusamus aliquam blanditiis eligendi, eos, 
+        excepturi et voluptas ipsam obcaecati ipsa porro est sunt 
+        laudantium aliquid adipisci rerum reprehenderit debitis? 
+        Repudiandae, fugit?
+    </span>
+
+    <div class="special left menu">This text will be pink</div>
+</body>
+
+<nav>
+    <a href="https://google.com">Google</a>
+    <a href="https://www.yahoo.com">Yahoo!</a>
+    <a href="https://www.bing.com">Bing</a>
+</nav>
+
+<nav role="navigation">
+    <ul>
+    <li><a href="https://google.com">Google</a></li>
+    <li><a href="https://www.yahoo.com">Yahoo!</a></li>
+    <li><a href="https://www.bing.com">Bing</a></li>
+    </ul>
+</nav>
+
+
+<section>
+    <!-- Each individual blog post is an <article> -->
+    <article>
+    <header>
+    <h1>Blog Post</h1>
+    <time datetime="2016-03-13">13th March 2016</time>
+    </header>
+    <p>The article element represents a self contained article or document.</p>
+    <p>The section element represents a grouping of content.</p>
+    <section>
+    <h2>Comments <small>relating to "Blog Post"</small></h2>
+    <!-- Related comment is also a self-contained article -->
+    <article id="user-comment-1">
+    <p>Excellent!</p>
+    <footer><p>...</p><time>...</time></footer>
+    </article>
+    </section>
+    </article>
+    <!-- ./repeat: <article> -->
+</section>
+<input id="cats" type="checkbox" name="Cats">
+<label for="cats" >I like Cats!</label>
+<label><br>
+    <input type="checkbox" name="Cats">
+    I like Cats!
+    </label>
+    <form action="/login" method="POST">
+        <label for="username">Username:</label>
+        <input id="username" type="text" name="username" />
+        <label for="pass">Password:</label>
+        <input id="pass" type="password" name="pass" />
+        <input type="submit" name="submit" />
+    </form>
+
+    <form id="form1" name="form1" oninput="out1.value = parseInt(in1.value, 10) + parseInt(in2.value,
+    10)">
+    <fieldset>
+    <legend>Output Example</legend>
+    <input type="number" id="in1" name="in1" value="0">
+    <br/>
+    +
+    <input type="number" id="in2" name="in2" value="0">
+    </fieldset>
+    </form>
+    <!--[for] attribute enables out1 to display calculations for in1 and in2.-->
+    <!--[form] attribute designates form1 as the form owner of out1 even if it isn't a descendant.-->
+    <output name="out1" for="in1 in2" form="form1">0</output>
+
+
+    <div>
+        <a href="http://stackoverflow.com/">
+        <h3>Click here to visit <i>Stack Overflow!</i></h3>
+        </a>
+        <button onclick="alert('Hello!');">Say Hello!</button>
+        <p>My favorite language is <b>HTML</b>. Here are my others:</p>
+        <ol>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+        </ol>
+    </div>
+
+
+<div class="div">
+    <img src="https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-icon.png" />
+<br>
+<hr>
+<input type="number" placeholder="Enter your favorite number">
+
+</div>
+
+<video width="200" height="200" controls>
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<div>
+    <!-- Simple video example -->
+<video src="videofile.webm" autoplay poster="posterimage.jpg">
+    Sorry, your browser doesn't support embedded videos,
+    but don't worry, you can 
+    <a href="videofile.webm">download it</a>
+    and watch it with your favorite video player!
+</video>
+</div>
+
+<!-- Video with subtitles -->
+<video src="foo.webm">
+    <track kind="subtitles" src="foo.en.vtt" srclang="en" label="English">
+    <track kind="subtitles" src="foo.sv.vtt" srclang="sv" label="Svenska">
+</video>
+<!-- Simple video example -->
+<video width="480" controls poster="https://archive.org/download/WebmVp8Vorbis/webmvp8.gif" >
+    <source src="https://archive.org/download/WebmVp8Vorbis/webmvp8.webm" type="video/webm">
+    <source src="https://archive.org/download/WebmVp8Vorbis/webmvp8_512kb.mp4" type="video/mp4">
+    <source src="https://archive.org/download/WebmVp8Vorbis/webmvp8.ogv" type="video/ogg">
+Your browser doesn't support HTML5 video tag.
+</video>
+
+
+<select name="">
+    <option value="milk">Milk</option>
+    <optgroup label="Fruits">
+    <option value="banana">Bananas</option>
+    <option value="strawberry">Strawberries</option>
+    </optgroup>
+    <optgroup label="Vegetables" disabled>
+    <option value="carrot">Carrots</option>
+    <option value="zucchini">Zucchini</option>
+    </optgroup>
+</select>
+
+
+
+<div tabindex="0">Some button</div>
+
+<button tabindex="-1">This button will not be reachable by tab</button>
+
+
+</html>
