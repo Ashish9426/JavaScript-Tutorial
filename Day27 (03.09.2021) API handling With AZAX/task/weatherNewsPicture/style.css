@@ -7,7 +7,7 @@ body {
 
 .container {
     width: 100%;
-    height: 620px;
+    height: px;
     text-align: center;
     line-height: 20px;
     margin: auto;
@@ -17,9 +17,9 @@ body {
 
 .card {
     width: 80%;
-    height: 40%;
+    height: 80%;
     margin: auto;
-    background: rgb(16, 97, 179);
+    background: rgb(179, 127, 16);
     font-family: cursive;
     padding: 0%;
 }
