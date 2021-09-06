@@ -1,5 +1,5 @@
 var data = []
-// console.log(data)
+
 
 function loadpets(){
 
@@ -13,9 +13,10 @@ function loadpets(){
         var result= JSON.parse(this.response)
         console.log(result)
         data = result.pets
-        data.push(data)
+        // data.push(data)
         }
-        
+
+        // console.log(data)
         // console.log(pets)
         BindItem(data)
     }

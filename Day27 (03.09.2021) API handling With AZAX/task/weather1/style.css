@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.container {
+    width: 100%;
+    height: 620px;
+    text-align: center;
+    line-height: 20px;
+    margin: auto;
+    background-color: rgb(183, 206, 53);
+    padding: 5px 5px;
+}
+
+.card {
+    width: 80%;
+    height: 95%;
+    margin: auto;
+    background: rgb(16, 97, 179);
+    font-family: cursive;
+    padding: 0%;
+}
+
+.card-header {
+    padding: 0;
+    width: 50%;
+    height: 120px;
+    text-align: center;
+    text-justify: auto;
+    border: 2px solid rgba(204, 21, 21, 0.815);
+    background: slategrey;
+    margin-top: 2px;
+}
+
+h2 {
+    margin-top: 0px;
+    text-align: center;
+}
+
+.city {
+    padding: 0;
+    width: 38.8%;
+    height: 118px;
+    position: absolute;
+    top: 6px;
+    left: 700px;
+    right: 5px;
+    text-align: initial;
+    text-justify: auto;
+    border: 2px solid rgba(231, 152, 152, 0.815);
+    background: rgba(79, 226, 59, 0.726);
+    margin-top: 2px;
+}
+
+.button {
+    background-color: #8a9c8a;
+    border: none;
+    color: rgb(39, 36, 36);
+    padding: 20px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.card-body {
+    padding: 2px 2px;
+}
+
+.box1 {
+    background-color: lightgrey;
+    border-radius: 6px;
+    width: 95%;
+    height: 125px;
+    border: 4px solid rgb(104, 7, 7);
+    padding: 2px;
+    margin: 10px;
+}
+
+.box2 {
+    background-color: lightgrey;
+    border-radius: 6px;
+    width: 95%;
+    height: 125px;
+    border: 4px solid rgb(78, 4, 4);
+    padding: 2px;
+    margin: 10px;
+}
+
+.box3 {
+    background-color: lightgrey;
+    border-radius: 6px;
+    width: 95%;
+    height: 125px;
+    border: 4px solid rgb(82, 4, 4);
+    padding: 2px;
+    margin: 10px;
+}
+
+.box4 {
+    background-color: lightgrey;
+    border-radius: 6px;
+    width: 95%;
+    height: 125px;
+    border: 4px solid rgb(104, 7, 7);
+    padding: 2px;
+    margin: 10px;
+}
+
+.box5 {
+    background-color: lightgrey;
+    border-radius: 6px;
+    width: 95%;
+    height: 125px;
+    border: 4px solid rgb(104, 7, 7);
+    padding: 2px;
+    margin: 10px;
+}
+
+h3 {
+    top: auto;
+    margin-top: 0%;
+    text-align: left;
+}
