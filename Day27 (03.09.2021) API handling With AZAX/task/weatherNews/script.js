@@ -44,15 +44,15 @@ function CallAjax1(country){
             console.log(JSON.parse(this.response))
 
             var data = JSON.parse(this.response)
-            console.log(typeof(data))
-             data1.push(data)
-            BindItem(data)
+            // console.log(typeof(data))
+            // data1.push(data)
+            // BindItem(data)
 
             // document.querySelector(".news").innerHTML = this.response
-            // document.querySelector(".news").innerHTML = `
-            //                                     <h2>Author : ${data.articles[0].author}</h5>
-            //                                     <h4>Title : ${data.articles[0].content}</h4>
-            //                                     <h4>Description : ${data.articles[0].description}</h6>`
+            document.querySelector(".news").innerHTML = `
+                                <h2>Author : ${data.articles[0].author}</h5>
+                                <h4>Title : ${data.articles[0].content}</h4>
+                                <h4>Description : ${data.articles[0].description}</h6>`
                                             
         }
     }

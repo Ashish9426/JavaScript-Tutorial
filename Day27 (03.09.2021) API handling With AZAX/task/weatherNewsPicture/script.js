@@ -48,13 +48,15 @@ function CallAjax(city) {
         
 
 
-            document.querySelector(".weather").innerHTML =  `
-            
+            document.querySelector(".weather").innerHTML = `
                     <h2>${env.name}</h5>
-                    <h4>Max Temp. ${Math.floor(env.main.temp_max - x)}</h4>
-                    <h4>Min Temp. ${Math.floor(env.main.temp_min - x)}</h6>
+                    <h4>Max Temp. ${env.main.temp_max - x}</h4>
+                    <h4>Min Temp. ${env.main.temp_min - x}</h6>
                     <p>Weather description : ${env.weather[0].description}</p>
-                     `;
+                `;
+
+            document.querySelector('#IconImg').src = 
+            'http://openweathermap.org/img/w/' + env.weather[0].icon + '.png';
             
         }
     }
@@ -83,9 +85,9 @@ function CallAjax1(country){
 
             document.querySelector(".news").innerHTML = this.response
             document.querySelector(".news").innerHTML = `
-                                                <h2>Author : ${data.articles[0].author}</h5>
-                                                <h4>Title : ${data.articles[0].content}</h4>
-                                                <h4>Description : ${data.articles[0].description}</h6>`
+                                <h2>Author : ${data.articles[0].author}</h5>
+                                <h4>Title : ${data.articles[0].content}</h4>
+                                <h4>Description : ${data.articles[0].description}</h6>`
                                             
         }
     }
