@@ -41,19 +41,7 @@ document.getElementById("btn").addEventListener("click",function(){
             <h4 class="card-title">${data.title}</h4>
             <p class="card-text">${data.body}</p>
         </div>
-        <div class="card-body card-p">
-            <div class="row">
-                <div class="col col-xs-4 ">
-                    <i class="far fa-comments"></i> 456
-                </div>
-                <div class="col col-xs-4 ">
-                    <i class="far fa-heart"></i> 2.4k
-                </div>
-                <div class="col col-xs-4">
-                    <i class="fas fa-share"></i> 99
-                </div>
-            </div>
-        </div>
+        
     </div></div>`
     })
 
@@ -75,26 +63,14 @@ document.getElementById("btn2").addEventListener("click",function(){
         <img src="" class="card-img-top" alt="...">
         <div class="card-body">
             <h4 class="card-title">${data2.name}</h4>
-            <p class="card-text">${data2.email}</p>
-            <p class="card-text">${data2.address}</p>
-            <p class="card-text">${data2.username}</p>
-            <p class="card-text">${data2.phone}</p>
-            <p class="card-text">${data2.company}</p>
-            <p class="card-text">${data2.website}</p>
+            <p class="card-text">Email : ${data2.email}</p>
+            <p class="card-text">Address : ${data2.address.city},${data2.address.street},${data2.address.zipcode}</p>
+            <p class="card-text">UserName : ${data2.username}</p>
+            <p class="card-text">Contact : ${data2.phone}</p>
+            <p class="card-text">Company : ${data2.company.name},${data2.company.catchPhrase},${data2.company.bs}</p>
+            <p class="card-text">Website : ${data2.website}</p>
         </div>
-        <div class="card-body card-p">
-            <div class="row">
-                <div class="col col-xs-4 ">
-                    <i class="far fa-comments"></i> 456
-                </div>
-                <div class="col col-xs-4 ">
-                    <i class="far fa-heart"></i> 2.4k
-                </div>
-                <div class="col col-xs-4">
-                    <i class="fas fa-share"></i> 99
-                </div>
-            </div>
-        </div>
+        
     </div></div>`
     })
 
