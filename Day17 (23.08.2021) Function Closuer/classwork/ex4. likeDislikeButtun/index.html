@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <div class="container">
+        <h2>Like and Dislike</h2>
+        <div class="box">
+            <div id="result">
+
+            </div>
+        </div>
+        <button id="btn-like">Like</button>
+        <button id="btn-dislike">DisLike</button>
+    </div>
+    
+
+    <script src="script.js"></script>
+
+    <script>
+        document.getElementById("btn-like").addEventListener("click", function(){
+            
+            var i =counter().like();
+            document.getElementById("result").innerHTML = "Like : " + i
+        })
+
+        document.getElementById("btn-dislike").addEventListener("click", function(){
+            
+            var i =counter().dislike();
+            document.getElementById("result").innerHTML = "Like : " + i
+        })
+    </script>
+</body>
+</html>
+
+
