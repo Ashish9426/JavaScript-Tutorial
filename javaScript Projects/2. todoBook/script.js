@@ -1,3 +1,5 @@
+
+
 var Books=function(id,title,price,author){
     this.id=id;
     this.title=title;
@@ -83,3 +85,17 @@ _("btn_add").addEventListener("click", AddBook);
 window.addEventListener("load",function(){
     BindBook(books)
 })
+
+
+_("txt_search").addEventListener("keyup",function(){
+    var txt=this.value
+    var result=books.filter(function(book){
+        if(JSON.stringify(book).includes(txt)){
+            return book;
+        }
+    })
+    
+    BindBook(result)
+})
+
+

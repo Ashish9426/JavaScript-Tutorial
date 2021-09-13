@@ -1,19 +1,3 @@
-/*
-console.log("--start--")
-var z;
-function product(x,y,callback){
-    setTimeout(function(){
-        z=x*y
-        console.log("--process--")
-        callback(z)
-    },5000)
-   
-}
-product(5,6,function(r){
-    console.log("result",r)
-})
-console.log("--end--")
-*/
 
 function httpget(url,callback)
 {

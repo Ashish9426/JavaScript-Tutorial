@@ -1,4 +1,4 @@
-/*-------------------Pure Function------------------*/
+ /*-------------------Pure Function------------------*/
 
 // pure function is similar to "call by reference" in c Language
 

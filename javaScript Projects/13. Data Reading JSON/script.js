@@ -50,7 +50,7 @@ function BindItem(arr){
     arr.forEach((e)=>{
 
         temp+=`<div class="col-4"><div class="card shadow">
-        <img src="" class="card-img-top" alt="...">
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Fcat&psig=AOvVaw2FnEj1pjVIr7ZrTEkkfU20&ust=1631532020667000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMDb1cuo-fICFQAAAAAdAAAAABAD" class="card-img-top" alt="...">
         <div class="card-body">
             <h4 class="card-title">${e.name}</h4>
             <p class="card-text">${e.age}</p>

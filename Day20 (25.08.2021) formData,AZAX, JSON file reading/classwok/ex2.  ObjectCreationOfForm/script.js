@@ -2,6 +2,7 @@
 // First Method
 document.getElementById("frm").addEventListener("submit",function(){
 event.preventDefault()
+// console.log(this)    //present object
  
 var data=serialize(this)
 console.log(data)
